@@ -846,9 +846,11 @@ of this helper program; chances are you did not intend to run this program.\n\
 	_dl_trace_prelink = _dl_getenv("LD_TRACE_PRELINKING", envp);
 #endif
 
+/*
 	if (_dl_getenv("LD_TRACE_LOADED_OBJECTS", envp) != NULL) {
 		trace_loaded_objects++;
 	}
+*/
 
 #ifndef __LDSO_LDD_SUPPORT__
 	if (trace_loaded_objects) {
